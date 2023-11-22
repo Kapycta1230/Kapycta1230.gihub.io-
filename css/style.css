@@ -1,0 +1,189 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  
+}
+
+.main-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e9f2;
+  height: 73px;
+}
+
+.header-containers{
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1px;
+  color: #18191f;
+}
+
+.logo img{
+  width: 50px;
+  margin-right: 10px;
+  
+}
+
+.nav{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1px;
+  color: #18191f;
+}
+
+.nav-link{
+  color: #18191f;
+  text-decoration: none;
+  margin-right: 32px;
+}
+
+.nav-link:hover{
+  color: #8c30f5;
+}
+
+.nav-link:last-child{
+  margin-right: 0;
+}
+
+.appstore{
+  margin-left: auto;
+  display: flex;
+}
+
+.appstore img{
+  width: 140px;
+  height: 78px;
+}
+
+.appstore a{
+  margin-left: 5px;
+  width: 140px;
+  height: 78px;
+}
+
+/* Main */
+
+.main {
+
+}
+
+.main-container {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  padding: 197px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content {
+  font-size: 18px;
+  width: 540px;
+}
+
+.main-text{
+  margin-bottom: 32px;
+}
+
+.main-text p{
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.main-header{
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 1.36;
+  color: #18191f;
+}
+
+.button{
+  display: inline-block;
+  height: 62px;
+  background-color: #8c30f5;
+  border-radius: 8px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 62px;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.main-img{
+
+}
+
+
+/* Footer */
+
+.footer{
+  height: 72px;
+  background-color: #0b0d17;
+  color: #d9dbe1;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container{
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copyright{
+  margin: 0;
+  font-size: 14px;
+  
+}
+
+.footer-socials{
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-socials img{
+  height: 65px;
+}
