@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 67, 255);
+        }
+
+        h1, p{
+            color: blue;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        h1:first-child{
+            color: red;
+        }
+
+        p{
+            color: black;
+            font-size: 30px;
+        }
+
+        .main, .lol{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image{
+            text-align: center;
+            border-radius: 20px;
+            border-color: red;
+            border-bottom: 20px;
+            width: 200px;
+            border-image: url('https://oir.mobi/uploads/posts/2020-01/1579151954_29-47.png') 30 fill / 30px / 30px space;
+        }
+
+        img{
+            width: 200px;
+            border-color: red;
+            border-bottom: 20px;
+            border-image: url('https://oir.mobi/uploads/posts/2020-01/1579151954_29-47.png') 30 fill / 30px / 30px space;
+        }
+
+        .table1, .table2{
+            border: 3px solid red;
+        }
+
+        .table1{
+            padding: 5px;
+        }
+
+        .table2{
+            background-color: rgb(146, 146, 0);
+        }
+
+        td{
+            border: 2px red dashed;
+        }
+
+        .to td{
+            border: 2px red solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Каскадные таблицы стилей</h1>
+    <p>Каскадные таблицы тегов стилей позволяют оформлять не только тексты и изображения, но и различные таблицы</p>
+    <h1>Оформление изображений</h1>
+    <div class="main">
+        <div class="image">
+            <img src="https://st.europaplus.ru/mf/p/262759/news/391/039151/content/767b12ab47d1cedeb629e6de925e7f42.jpg" alt="">
+        </div>
+    </div>
+    <h1>Оформление таблиц</h1>
+    <div class="lol">
+    <div class="table1">
+        <div class="table2">
+            <table>
+                <tr>
+                    <td>Фамилия</td>
+                    <td>Адрес</td>
+                    <td>Телефон</td>
+                </tr>
+                <tr class="to">
+                    <td>Иванов</td>
+                    <td>Ленина, 8</td>
+                    <td>1231212</td>
+                </tr>
+                <tr class="to">
+                    <td>Петров</td>
+                    <td>Суворова, 2</td>
+                    <td>5556473</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
