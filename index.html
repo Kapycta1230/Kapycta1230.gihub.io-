@@ -1,68 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>TaskTracker</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Фотогалерея</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Стили для шапки сайта */
+.header {
+  background-image: url('path/to/header-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Высота шапки */
+  text-align: center;
+}
+
+.header-text {
+  color: green;
+  font-size: 48px;
+  text-shadow:
+    0 0 10px yellow,
+    0 0 20px yellow,
+    0 0 30px yellow,
+    0 0 40px yellow,
+    0 0 50px yellow,
+    0 0 60px yellow,
+    0 0 70px yellow;
+  margin-top: -120px; /* Регулируйте отступ сверху в зависимости от высоты шапки */
+}
+
+/* Стили для контейнера с изображениями */
+.main-content {
+  text-align: center;
+  padding-top: 50px; /* Отступ сверху для контейнера с изображениями */
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px; /* Отступ между изображениями и текстом поверх */
+  margin-top: -250px;
+}
+
+.image-container img {
+  width: 300px; /* Размер изображений */
+  height: 200px; /* Размер изображений */
+  object-fit: cover;
+  margin: 5px; /* Отступы между изображениями */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: white;
+  font: 900;
+  font-size: 20px;
+  text-shadow: red 2px  5px 5px ;
+
+}
+
+.overlay-text p {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+
+
+.image-container:last-child {
+  margin-top: 0px;
+}
+
+  </style>
 </head>
-<body class="main-page">
-    <header class="header"> 
-        <div class="header-containers">
-            <div class="logo">
-                <img src="images/logo.png" alt="ГовноЧист"><a href="">
-                    Рамазан Молодец
-                    </a>
-            </div>
-            <nav class="nav">
-                <a class="nav-link" href="#">Приложение</a>
-                <a class="nav-link" href="#">Возможности</a>
-                <a class="nav-link" href="#">Стоимость</a>
-                <a class="nav-link" href="#">Блог</a>
-                <a class="nav-link" href="#">Контакты</a>
-            </nav>
-            <div class="appstore">
-                <a href="#">
-                    <img src="images/apple.svg" alt="Скачать в ЭплСтор">
-                </a>
-                <a href="#">
-                    <img src="images/google.svg" alt="Скачать в ГуглПлей">
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <main class="main">
-        <div class="main-container">
-            <div class="main-content">
-                <h1 class="main-header">Приложение органайзер</h1>
-                <div class="main-text">
-                    <p>
-                        Контролируй все свои дела и задачи. 
-                        Не упускай ничего важного. Заметки,
-                        даты и напоминания. Все в одном месте.
-                    </p>
-                </div>
-                <a class="button" href="#">Начать пользоваться</a>
-            </div>
-            <div class="main-img"><img src="/images/contentFirst.jpg" alt=""></div>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-copyright">
-                <p>
-                    Я не придумал что тут писать, 
-                    поэтому нажмите Alt+F4 и придумайте сами
-                </p>
-            </div>
-            <div class="footer-socials">
-                <img src="/images/dog.jpg" alt="">
-            </div>
-        </div>
-    </footer>
+<body>
+  <header class="header">
+    <img src="https://demiart.ru/forum/uploads10/post-1231048-1338582672.png" alt="">
+    <h1 class="header-text">Фотогалерея</h1>
+  </header>
+  
+  <main class="main-content">
+    <div class="image-container">
+      <img src="https://flomaster.top/uploads/posts/2022-06/1656440902_1-flomaster-club-p-narisovannie-doma-krasivo-1.jpg" alt="Изображение 1">
+      <img style="filter: grayscale(100%);" src="https://flomaster.top/uploads/posts/2022-06/1656440902_1-flomaster-club-p-narisovannie-doma-krasivo-1.jpg" alt="Изображение 2">
+      <img style="filter: invert(100%);" src="https://flomaster.top/uploads/posts/2022-06/1656440902_1-flomaster-club-p-narisovannie-doma-krasivo-1.jpg" alt="Изображение 3">
+    </div> <br>
+    <div class="image-container">
+      <img src="https://pngicon.ru/file/uploads/tablichka-vyveska.png" alt="Изображение 1">
+      <p class="overlay-text">Дом</p>
+    </div>
+    <div class="image-container">
+      <img src="https://pngicon.ru/file/uploads/tablichka-vyveska.png" alt="Изображение 1">
+      <p class="overlay-text" style="text-shadow: 1px 1px 2px red, 1px -4px 5px red, 1px -6px 6px red">Дом</p>
+    </div>
+    <div class="image-container">
+      <img src="https://pngicon.ru/file/uploads/tablichka-vyveska.png" alt="Изображение 1">
+      <p class="overlay-text">Дом</p>
+    </div>
+  </main>
+  <footer>
+    <button>
+      <a style="text-decoration: none;" href="2.html">Ссылка на следующую работу</a>
+    </button>
+  </footer>
 </body>
 </html>
